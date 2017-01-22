@@ -1,0 +1,85 @@
+.what-offer {
+  padding: 15px 0;
+
+  @media all and (min-width: @screen-lg) {
+    padding-bottom: 30px;
+  }
+
+  &__row {
+    .row;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      left: 10px;
+      right: 10px;
+      bottom: 0;
+      border-bottom: 1px solid #f3f1ed;
+    }
+
+    &:last-child {
+      &::before {
+        display: none;
+      }
+    }
+
+    @media all and (min-width: @screen-md) {
+      padding-bottom: 60px;
+    }
+
+    @media all and (min-width: @screen-lg) {
+      padding-top: 35px;
+      padding-bottom: 70px;
+    }
+  }
+
+  &__title {
+    .col (xs, 12);
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+  &__img {
+    .col (xs, 12);
+    .col (md, 6);
+    .col-offset(md, 3);
+    .col (lg, 5);
+    .col-offset(lg, 0);
+    text-align: center;
+
+    img {
+      max-height: 250px;
+    }
+  }
+
+  &__info {
+    .col (xs, 12);
+    .col (md, 10);
+    .col-offset(md, 1);
+    .col (lg, 7);
+    .col-offset(lg, 0);
+    text-align: center;
+
+    @media all and (min-width: @screen-lg) {
+      text-align: left;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 30px;
+    margin-top: 25px;
+
+    .button {
+      margin-bottom: 20px;
+
+      @media all and (min-width: @screen-md) {
+        margin-right: 18px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

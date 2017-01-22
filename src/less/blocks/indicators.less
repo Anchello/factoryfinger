@@ -1,0 +1,45 @@
+.indicators {
+  padding: 30px 0 10px;
+  text-align: center;
+
+  @media all and (min-width: @screen-md) {
+    padding: 40px 0 30px;
+  }
+
+  @media all and (min-width: @screen-lg) {
+    padding: 60px 0 50px;
+  }
+
+  &__row {
+    .row;
+  }
+
+  &__title {
+    .col (xs, 12);
+  }
+
+  &__text {
+    .col (xs, 12);
+    font-size: 18px;
+  }
+
+  &__item {
+    margin-bottom: 50px;
+    .col (xs, 12);
+    .col (md, 3);
+    font-size: 12px;
+    font-weight: 300;
+
+    @media all and (min-width: @screen-md) {
+      margin-top: 50px;
+    }
+  }
+
+  &__num {
+    color: @link-color;
+    font-size: 42px;
+    font-weight: 400;
+    display: block;
+    //margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta name="author" content="Boroda Digital, borodaboroda.com">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <title>Ui-kit — Factory Finger</title>
+
+    @@include('include/page-head.html')
+</head>
+<body>
+
+    <div class="page__wrapper" style="padding-bottom: 50px;">
+        <div class="container" style="padding-top: 50px;">
+            <h1>Базовые элементы</h1>
+
+            <h1>Заголовок H1</h1>
+            <h2>Заголовок H2</h2>
+            <h3>Заголовок H3</h3>
+            <h4>Заголовок H4</h4>
+            <h5>Заголовок H5</h5>
+            <h6>Заголовок H6</h6>
+
+            <p>Текст с параграфом и со словами в <sup>верхнем</sup> и <sub>нижнем</sub> позиционировании</p>
+
+            <a>Ссылка</a><br>
+            <a class="-nav">Ссылка в навигации</a><br>
+        </div>
+
+        <div class="container" style="padding-top: 50px; background: #bdbdbd;">
+            <h1>Кнопки</h1>
+
+            <span class="button" style="margin: 10px;">Кнопка</span>
+            <span class="button button--lg" style="margin: 10px;">Большая кнопка</span>
+            <span class="button button--print" style="margin: 10px;">Большая кнопка2</span>
+            <span class="button button--violet" style="margin: 10px;">Фиолетовая кнопка</span>
+            <span class="button button--how" style="margin: 10px;">Как это работает</span>
+            <span class="button button--submit" style="margin: 10px;">Отправить заявку</span>
+            <span class="button button--red" style="margin: 10px;">Красная кнопка</span>
+            <span class="button button--green" style="margin: 10px;">Зеленая кнопка</span>
+            <span class="button button--transparent" style="margin: 10px;">Прозрачная кнопка</span>
+            <span class="button button--transparent-white" style="margin: 10px;">Прозрачная кнопка</span>
+        </div>
+
+        <div class="container" style="padding-top: 50px;">
+            <h1>Элементы формы</h1>
+            <label for="name" class="textfield__label">Текстовое поле</label>
+            <input type="text" class="textfield" name="name" placeholder="Текстовое поле" id="name">
+
+            <label for="message" class="textfield__label">Ваш вопрос</label>
+            <textarea class="textfield textfield--area" name="message" placeholder="Ваш вопрос" id="message"></textarea>
+
+            <br><br><br>
+
+            <!--<div class="select">-->
+                <!--<select class="select__input">-->
+                    <!--<option selected disabled>Список</option>-->
+                    <!--<option>Элемент списка 1</option>-->
+                    <!--<option>Элемент списка 2</option>-->
+                <!--</select>-->
+            <!--</div>-->
+
+        </div>
+
+        <div class="container" style="padding-top: 50px;">
+            <h1>Векторы</h1>
+
+        </div>
+
+        <div class="container" style="padding-top: 50px;">
+            <h1>Иконки</h1>
+            <span class="icon icon--map"></span>
+            <br>
+
+            <span class="icon icon--menu" ></span>
+            <span class="icon icon--arrow-back" ></span>
+        </div>
+
+
+
+        <div class="container" style="padding-top: 50px;">
+
+            <figure class="figure" style="width: 316px">
+                <img class="figure__img" src="img/work_01.png" alt="">
+
+                <figcaption class="figcaption">
+                    <h4 class="figcaption__title -nomargin-bottom">Оформление заказа</h4>
+                    <p>Создайте заказ на производство или поставку, укажите материал, количество и другие параметры.</p>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+
+    @@include('include/page-bottom.html')
+</body>
+</html>
