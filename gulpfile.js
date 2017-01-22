@@ -69,7 +69,7 @@ gulp.task('build', function(){
   gulp.src('./src/js/*.js')
       .pipe(uglify())
       .pipe(gulp.dest('./build/js'));
-  gulp.src('./src/svg/*.*')
+  gulp.src('./src/svg/**/*.*')
       .pipe(gulp.dest('./build/svg'));
 });
 
